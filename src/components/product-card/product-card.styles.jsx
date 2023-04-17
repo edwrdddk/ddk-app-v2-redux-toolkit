@@ -13,6 +13,7 @@ export const ProductCartContainer = styled.div`
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    border-radius: 13px;
   }
 
   button {
@@ -41,13 +42,16 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  padding-right: 8px;
+  padding-left: 8px;
 `;
 
 export const Name = styled.span`
-  width: 90%;
+  /* width: 90%; */
   margin-bottom: 15px;
 `;
 
 export const Price = styled.span`
-  width: 10%;
+  width: 20%;
+  text-align: right;
 `;

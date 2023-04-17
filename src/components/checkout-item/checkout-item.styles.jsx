@@ -6,7 +6,7 @@ export const CheckoutItemContainer = styled.div`
   min-height: 100px;
   border-bottom: 1px solid darkgrey;
   padding: 15px 0;
-  font-size: 20px;
+  font-size: 17px;
   align-items: center;
 `;
 
@@ -15,8 +15,9 @@ export const ImageContainer = styled.div`
   padding-right: 15px;
 
   img {
-    width: 100%;
+    width: 95%;
     height: 100%;
+    border-radius: 10px;
   }
 `;
 
