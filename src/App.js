@@ -23,7 +23,8 @@ const App = () => {
       if (user) {
         createUserDocumentFromAuth(user);
       }
-      dispatch(setCurrentUser(user));
+      const pickedUser = user && (({accessToken, email}) => ({accessToken, email}))(user); //immediately invoking function. lctr 186.
+      dispatch(setCurrentUser(pickedUser)); 
     });
 
     return unsubscribe;
